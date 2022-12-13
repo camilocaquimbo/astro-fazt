@@ -1,8 +1,8 @@
 #CAM notes
 - Tutorial from YT:
 - Commands:
-   npm run dev
-   npm run build
+   - npm run dev
+   - npm run build
 
 # Welcome to [Astro](https://astro.build)
 
