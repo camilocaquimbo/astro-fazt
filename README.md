@@ -1,8 +1,13 @@
-#CAM notes
+# CAM notes
 - Tutorial from YT:
 - Commands:
    - npm run dev
    - npm run build
+- Pocketbase: https://github.com/pocketbase/js-sdk
+
+
+const url = 'https://tall-tiger.pockethost.io'
+const client = new PocketBase(url)
 
 # Welcome to [Astro](https://astro.build)
 

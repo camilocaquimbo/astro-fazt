@@ -3,8 +3,27 @@ import CAMlayout from "../layouts/CAMlayout.astro";
 
 //http://127.0.0.1:8090/api/collections/info/records/se2rewv4lhvobmk
 
+import PocketBase from 'pocketbase';
+
+//const pb = new PocketBase('http://127.0.0.1:8090');
+
+const pb = await fetch('http://127.0.0.1:8090/api/collections/info/records/se2rewv4lhvobmk')
+
+// you can also fetch all records at once via getFullList
+//const records = await pb.collection('info').getFullList(200 /* batch size */, {
+    //sort: '-created',
+//});
+
+const data1 = await pb.json()
+console.log(data1)
+
+//const dataresults = data1.results
+//console.log(dataresults)
+
 ---
 
 <CAMlayout>
-    <h1>About - Con contenido</h1>
+    <h1>About - Con contenido </h1>
+    <h2>{data1.description}</h2>
+    <p>{data1.long_text}</p>
 </CAMlayout>
