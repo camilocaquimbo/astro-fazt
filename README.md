@@ -1,4 +1,4 @@
-# CAM notes
+# CAM notes mod desde el celular prueba edición de un JSON  
 - Tutorial from YT:
 - Commands:
    - npm run dev
